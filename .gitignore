@@ -1,0 +1,25 @@
+# Node.js modules
+node_modules
+npm-debug.log
+
+# iOS specific
+/build/
+*.xcarchive
+*.xcworkspace
+*.xcproject
+Pods/
+Podfile.lock
+
+# Android specific
+/android/app/build/
+/android/app/.idea
+/android/gradle.properties
+
+# Generated files
+/android/app/build/outputs/
+/android/app/build/intermediates/
+/android/app/build/generated/
+
+# Testing files
+/coverage/
+/test-results/
