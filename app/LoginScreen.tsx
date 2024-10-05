@@ -128,10 +128,10 @@ const LoginScreen = () => {
 
                 <View style={authStyles.forgotUsernameContainer}>
                     <TouchableOpacity
-                       onPress={() =>
-                        router.navigate('/ForgotUserNameScreen') // Cast to string type
-
-                    }>
+                             onPress={() =>
+                                router.navigate('/ForgotUserNameScreen') // Cast to string type
+        
+                            }>
                         <Text style={authStyles.forgotUsername}>Forgot username?</Text>
                     </TouchableOpacity>
                 </View>

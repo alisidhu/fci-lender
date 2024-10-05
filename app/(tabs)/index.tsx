@@ -6,12 +6,14 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import LoginScreen from './LoginScreen'; // Adjust the import path as necessary
+import LoginScreen from '../LoginScreen'; // Adjust the import path as necessary
+import ForgotPasswordScreen from '../ForgotPasswordScreen'; // Adjust the import path as necessary
+import MySplashScreen from '../MySplashScreen';
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <LoginScreen />
+      <MySplashScreen />
     </SafeAreaView>
   );
 }
