@@ -6,7 +6,7 @@ import { authStyles } from '@/components/styles/AuthStyle';
 import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
 import { useRouter } from 'expo-router';
 
-const ForgotUserNameScreen = () => {
+const ForgotPasswordScreen = () => {
     const navigation = useNavigation(); // Get the navigation prop
     const router = useRouter();
 
@@ -93,4 +93,4 @@ const ForgotUserNameScreen = () => {
 
 
 
-export default ForgotUserNameScreen;
+export default ForgotPasswordScreen;

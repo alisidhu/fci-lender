@@ -5,7 +5,7 @@ import { Colors } from '@/constants/Colors';
 import { authStyles } from '@/components/styles/AuthStyle';
 import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
 
-const ForgotPasswordScreen = () => {
+const ForgotUserNameScreen = () => {
     const navigation = useNavigation(); // Get the navigation prop
 
     const [email, setEmail] = useState('');
@@ -90,4 +90,4 @@ const ForgotPasswordScreen = () => {
 
 
 
-export default ForgotPasswordScreen;
+export default ForgotUserNameScreen;
