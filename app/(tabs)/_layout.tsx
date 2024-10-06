@@ -27,6 +27,11 @@ export default function TabLayout() {
         name="ForgotUserNameScreen"
         options={{ headerBackTitleVisible: false }}
       />
+
+      <Stack.Screen
+        name="NewPasswordScreen"
+        options={{ headerBackTitleVisible: false }}
+      />
       <Stack.Screen
         name="tabs"
         options={{ headerBackTitleVisible: false }}

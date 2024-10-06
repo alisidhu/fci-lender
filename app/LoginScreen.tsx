@@ -67,7 +67,11 @@ const LoginScreen = () => {
                     </View>
                 </View>
                 {/* Show error message based on conditions */}
-                 emailError ? ( <Text style={authStyles.error}>{emailError}</Text>) : null
+                {email === '' ? (
+                    <Text style={authStyles.subText}>Enter your registered email</Text>
+                ) : emailError ? (
+                    <Text style={authStyles.error}>{emailError}</Text>
+                ) : null}
 
                 <View style={authStyles.inputContainer}>
                     <View style={authStyles.innerInputContainer}>

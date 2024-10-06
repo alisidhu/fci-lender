@@ -4,9 +4,11 @@ import { Ionicons } from '@expo/vector-icons'; // Ensure you have this installed
 import { Colors } from '@/constants/Colors';
 import { authStyles } from '@/components/styles/AuthStyle';
 import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
+import { useRouter } from 'expo-router';
 
 const ForgotUserNameScreen = () => {
     const navigation = useNavigation(); // Get the navigation prop
+    const router = useRouter();
 
     const [email, setEmail] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -34,6 +36,7 @@ const ForgotUserNameScreen = () => {
     const handleSignIn = () => {
         // Handle sign-in logic here
         console.log('Email:', email);
+        router.navigate('/NewPasswordScreen'); // Cast to string type
     };
 
 
