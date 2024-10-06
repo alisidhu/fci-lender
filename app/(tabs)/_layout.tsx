@@ -33,6 +33,10 @@ export default function TabLayout() {
         options={{ headerBackTitleVisible: false }}
       />
       <Stack.Screen
+        name="PasswordSuccessScreen"
+        options={{ headerBackTitleVisible: false }}
+      />
+      <Stack.Screen
         name="tabs"
         options={{ headerBackTitleVisible: false }}
       />

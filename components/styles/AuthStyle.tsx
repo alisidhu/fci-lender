@@ -161,6 +161,33 @@ export const authStyles = StyleSheet.create({
         marginBottom: 12,
         alignSelf: 'flex-start', // Aligns error message to the start
     },
+    passwordTitle: {
+        fontSize: 32,
+        fontWeight: 'bold',
+        marginBottom: 10,
+        color: 'black', // New code: changed text color to black
+        textAlign: 'center', // New code: center the title
+    },
+    message: {
+        fontSize: 16,
+        marginBottom: 20,
+        textAlign: 'center', // New code: center the message
+        color: 'grey', // New code: change color to grey
+    },
+    countdown: {
+        fontSize: 14,
+        marginBottom: 20,
+        position: 'absolute', // New code: position countdown above button
+        bottom: 70, // New code: adjust position as needed
+        left: 0,
+        right: 0,
+        textAlign: 'center', // New code: center the countdown
+    },
+      image: {
+        width: 200,
+        height: 200,
+        marginBottom: 20,
+      },
 
 });
 

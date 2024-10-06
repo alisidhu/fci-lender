@@ -3,9 +3,11 @@ import { View, Text, TextInput, TouchableOpacity, ScrollView, SafeAreaView, Keyb
 import { Ionicons } from '@expo/vector-icons'; // Ensure you have this installed
 import { authStyles } from '@/components/styles/AuthStyle';
 import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
+import { useRouter } from 'expo-router';
 
 const NewPasswordScreen = () => {
     const navigation = useNavigation(); // Get the navigation prop
+    const router = useRouter();
 
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -47,6 +49,8 @@ const NewPasswordScreen = () => {
     const handlePasswordSubmit = () => {
         if (isPasswordValid) {
             // Handle password submission
+            router.navigate('/PasswordSuccessScreen');
+
             console.log('Password changed successfully');
         }
     };
