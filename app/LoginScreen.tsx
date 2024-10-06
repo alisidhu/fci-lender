@@ -6,7 +6,7 @@ import { authStyles } from '@/components/styles/AuthStyle';
 import { useRouter } from 'expo-router';
 
 const LoginScreen = () => {
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState('ali@gmail.com');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
@@ -28,8 +28,10 @@ const LoginScreen = () => {
          if (!validateEmail(email)) {
             setEmailError('Invalid email address');
         } else {
+
             setEmailError(''); // Clear error if valid
             passwordInputRef.current?.focus(); // Focus on password field
+            console.log("go to dashboard");
 
         }
     };
@@ -39,6 +41,8 @@ const LoginScreen = () => {
         console.log('Email:', email);
         console.log('Password:', password);
         console.log('Remember Me:', rememberMe);
+        router.navigate('/DashboardScreen'); // Cast to string type
+
     };
 
 

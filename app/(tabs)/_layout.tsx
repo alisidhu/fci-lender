@@ -12,33 +12,37 @@ export default function TabLayout() {
     <Stack >
       <Stack.Screen
         name="MySplashScreen"
-        options={{ headerBackTitleVisible: false }}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="LoginScreen"
-        options={{ headerBackTitleVisible: false }}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="ForgotPasswordScreen"
-        options={{ headerBackTitleVisible: false }}
+        options={{ headerShown: false }}
       />
 
       <Stack.Screen
         name="ForgotUserNameScreen"
-        options={{ headerBackTitleVisible: false }}
+        options={{ headerShown: false }}
       />
 
       <Stack.Screen
         name="NewPasswordScreen"
-        options={{ headerBackTitleVisible: false }}
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="PasswordSuccessScreen"
-        options={{ headerBackTitleVisible: false }}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="DashboardScreen"
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="tabs"
-        options={{ headerBackTitleVisible: false }}
+        options={{ headerShown: false }}
       />
     </Stack>
   );
