@@ -23,9 +23,9 @@ const LoginScreen = () => {
 
     const handleEmailSubmit = () => {
         // Validate email
-        if (email.trim() === '') {
-            setEmailError('Enter your registered email');
-        } else if (!validateEmail(email)) {
+    //    if (email.trim() === '') {
+      //      setEmailError('Enter your registered email');
+         if (!validateEmail(email)) {
             setEmailError('Invalid email address');
         } else {
             setEmailError(''); // Clear error if valid
@@ -57,6 +57,7 @@ const LoginScreen = () => {
                             placeholder="Email"
                             value={email}
                             placeholderTextColor="#A9A9A9"
+                            autoCapitalize="none"
                             onChangeText={setEmail}
                             keyboardType="email-address" // This enables the email keyboard
                             onSubmitEditing={handleEmailSubmit} // Handle submission
@@ -66,11 +67,7 @@ const LoginScreen = () => {
                     </View>
                 </View>
                 {/* Show error message based on conditions */}
-                {email === '' ? (
-                    <Text style={authStyles.subText}>Enter your registered email</Text>
-                ) : emailError ? (
-                    <Text style={authStyles.error}>{emailError}</Text>
-                ) : null}
+                 emailError ? ( <Text style={authStyles.error}>{emailError}</Text>) : null
 
                 <View style={authStyles.inputContainer}>
                     <View style={authStyles.innerInputContainer}>

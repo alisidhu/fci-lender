@@ -55,6 +55,7 @@ const ForgotPasswordScreen = () => {
                             style={authStyles.input}
                             placeholder="Email"
                             value={email}
+                            autoCapitalize="none"
                             placeholderTextColor="#A9A9A9"
                             onChangeText={setEmail}
                             keyboardType="email-address" // This enables the email keyboard

@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator,Appearance } from 'react-native';
 import { useRouter } from 'expo-router';
-import LoaderKit from 'react-native-loader-kit'
 import { Colors } from '@/constants/Colors';
 // Get the initial color scheme (light or dark)
 const colorScheme = Appearance.getColorScheme();
@@ -23,9 +22,7 @@ const MySplashScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}> FCI Lender {"\n"}Services, Inc</Text>
-      {/* Add your loading indicator here */}
       <ActivityIndicator size="large" color="#FFFFFF" style={styles.loader} />
-   
     </View>
   );
 };

@@ -57,6 +57,7 @@ const ForgotUserNameScreen = () => {
                             value={email}
                             placeholderTextColor="#A9A9A9"
                             onChangeText={setEmail}
+                            autoCapitalize="none"
                             keyboardType="email-address" // This enables the email keyboard
                             onSubmitEditing={handleEmailSubmit} // Handle submission
                             returnKeyType="done" // Show 'Next' on keyboard
