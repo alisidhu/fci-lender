@@ -44,6 +44,10 @@ export default function TabLayout() {
         name="tabs"
         options={{ headerShown: false }}
       />
+      <Stack.Screen
+        name="AppNavigator"
+        options={{ headerShown: false }}
+      />
     </Stack>
   );
 }

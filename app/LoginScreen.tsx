@@ -41,7 +41,7 @@ const LoginScreen = () => {
         console.log('Email:', email);
         console.log('Password:', password);
         console.log('Remember Me:', rememberMe);
-        router.navigate('/DashboardScreen'); // Cast to string type
+        router.navigate('/AppNavigator'); // Cast to string type
 
     };
 
